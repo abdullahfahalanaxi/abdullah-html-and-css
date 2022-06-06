@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&display=swap');
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* ::-webkit-scrollbar-track {
+    
+} */
+  
+  ::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+
+}
+
+:root {
+    --white-color: #ececec;
+    --frist-color: #407356;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: 'Tajawal', sans-serif;
+}
+
+main {
+    max-width: 1366px;
+    margin: auto;
+}
+
+/* قسم الناف بار  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    align-items: center;
+}
+
+header img {
+    width:90px;
+}
+
+.text {
+    display: flex;
+    list-style-type: none;
+
+}
+
+header .text > li > a {
+    font-size: 20px;
+    color: #1f1f1f;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    padding: 0 30px;
+}
+
+/* القائمة الرئيسية */
+
+.hero-section {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(/image/proj-neom_xl.png);
+    background-size: cover;
+    height: 80vh;
+    margin-top: 30px;
+    opacity: .9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.info {
+    z-index: 999;
+    color: var(--white-color);
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info h4 {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.info h4 span {
+    color: var(--frist-color);
+    font-weight: 700;
+}
+
+.info p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.hero-section a {
+    display: block;
+    margin-top: 100px;
+    color: var(--white-color);
+    font-size: 45px;
+    animation: moveangles 1.5s infinite;
+    max-width: 60px;
+}
+
+@keyframes moveangles {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%, 60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* الموقع الجغرافي */
+
+.Location-section {
+    margin-top: 90px;
+    height: 105vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(image/location.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white-color);
+    padding: 30px;
+}
+
+.loca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loca h3 {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.loca p {
+    max-width: 440px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: #c9c9c9;
+}
+
+.loca-text p {
+    margin-top: 30px;
+}
+
+.google-map {
+    border-radius: 15px;
+}
+
+/* اهداف المشروع */
+
+.goal-section {
+    height: 100vh;
+    text-align: center;
+}
+
+.goal-section h2 {
+    color: var(--frist-color);
+    margin: 50px;
+    font-size: 40px;
+}
+
+.goal-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.goal-card {
+    display: flex;
+    text-align: center;
+    background-color: var(--frist-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 39px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.goal-img img {
+    min-width: 300px;
+    max-width: 300px;
+    transform: translateX(60px);
+    border-radius: 30px;
+}
+
+.goal-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.goal-text h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.goal-text p {
+    max-width: 900px;
+    font-weight: 600;
+    color: #c9c9c9;
+    line-height: 2;
+}
+
+/* الفوتر */
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    height: 23vh;
+    padding: 30px 0;
+}
+
+footer h2 {
+    color: white;
+    letter-spacing: 1px;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    max-width: fit-content;
+    margin: auto;
+}
+
+footer p {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.copyright {
+    margin-top:70px;
+    text-align:center;
+    font-size:15px;
+    color:#aaa;
+    margin-bottom:5px;
+  }
